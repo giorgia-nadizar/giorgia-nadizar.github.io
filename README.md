@@ -1,4 +1,5 @@
-# academic-website
+# Personal Website
+Developed using VueJs. Still not visible anywhere.
 
 ## Project setup
 ```
