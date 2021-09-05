@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <!-- main menu -->
-    <b-navbar toggleable="md" sticky type="dark" variant="info" class="menu">
+    <b-navbar toggleable="md" sticky type="dark" class="navbar-expand-md" variant="info">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+      <b-collapse id="nav-collapse" is-nav class="navbar-items">
+        <b-navbar-nav >
           <b-nav-item to="biography">Biography</b-nav-item>
           <b-nav-item to="publications">Publications</b-nav-item>
           <b-nav-item to="cv">Cv</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <b-container>
+    <!-- website content -->
+    <b-container class="main">
       <b-row>
         <b-col sm=4 xs=12> <Header/> </b-col>
         <b-col sm=8 xs=12 class="content-column"> <router-view/> </b-col>
@@ -41,5 +42,15 @@ export default {
 }
 .content-column{
   text-align: left;
+}
+.navbar-items{
+  max-width: 80%;
+  margin: auto;
+}
+@media (min-width: 769px) {
+  .main{
+    max-width: 80%;
+    margin: auto;
+  }
 }
 </style>

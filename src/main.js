@@ -1,23 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { BootstrapVue  } from 'bootstrap-vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
 import router from './router'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-library.add(faEnvelope)
-library.add(faGraduationCap)
-library.add(faTwitter)
-library.add(faGithub)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('v-icon', Icon)
 
 Vue.config.productionTip = false
 
