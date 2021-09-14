@@ -39,16 +39,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-.content-column{
+}.content-column{
   text-align: left;
-}
-.navbar-items{
-  max-width: 80%;
-  margin: auto;
 }
 @media (min-width: 769px) {
   .main{
+    max-width: 80%;
+    margin: auto;
+  }
+  .navbar-items{
     max-width: 80%;
     margin: auto;
   }
