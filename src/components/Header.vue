@@ -2,7 +2,7 @@
   <div class="side-panel">
     <b-avatar class="avatar-with-border" :src="require('../static/scholar.jpg')" size="8rem"></b-avatar>
     <h1>Giorgia Nadizar</h1>
-    <h2>PhD student wanna-be.</h2>
+    <h2>Ph.D. student in Applied Data Science & Artificial Intelligence</h2>
     <SocialIcons />
   </div>
 </template>
