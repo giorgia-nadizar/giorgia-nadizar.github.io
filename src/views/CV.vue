@@ -15,6 +15,7 @@
 <script>
 export default {
   name: 'Cv',
+  title: 'Giorgia Nadizar - CV',
   data() {
     return {
       items : {

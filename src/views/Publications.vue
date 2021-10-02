@@ -12,6 +12,7 @@ import axios from "axios";
 import Publication from '@/components/Publication.vue'
 export default {
   name: 'Publications',
+  title: 'Giorgia Nadizar - Publications',
   components: {
     Publication
   },

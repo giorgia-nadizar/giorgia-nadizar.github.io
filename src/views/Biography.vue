@@ -6,7 +6,7 @@
         Intelligence in the <a href="https://erallab.inginf.units.it/">"Evolutionary
         Robotics and Artificial Life Lab"</a>,
         <a href="https://www.units.it/">University of Trieste</a>.
-        I earned my Bachelor and Master in Eletronics and Computer Engineering at
+        I earned my Bachelor and Master in Electronics and Computer Engineering at
         the University of Trieste, in 2019 and 2021 respectively.
         I wrote my Master Thesis in collaboration with Oslo Metropolitan University,
         where I spent six months working as Research Assistant, from March to August
@@ -22,4 +22,10 @@
         information back to neuroscience.
       </p>
     </div>
-  </template>
+</template>
+
+<script>
+export default {
+  title: 'Giorgia Nadizar'
+}
+</script>

@@ -9,6 +9,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@fontsource/roboto'
 
+import titleMixin from './mixins/titleMixin'
+
+Vue.mixin(titleMixin)
+
 Vue.component('v-icon', Icon)
 
 Vue.config.productionTip = false
