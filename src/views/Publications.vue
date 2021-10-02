@@ -1,6 +1,6 @@
 <template>
   <div class="publications">
-    <h1>Publications</h1>
+    <h1 class="view-title">Publications</h1>
     <div v-for="publication in publications" :key="publication.id">
       <Publication :publication="publication" />
     </div>

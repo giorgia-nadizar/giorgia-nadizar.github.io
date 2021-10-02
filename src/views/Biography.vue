@@ -1,6 +1,6 @@
 <template>
   <div class="biography">
-    <h1>Biography</h1>
+    <h1 class="view-title">Biography</h1>
       <p>
         I am a PhD student in Applied Data Science and Artificial
         Intelligence in the <a href="https://erallab.inginf.units.it/">"Evolutionary

@@ -1,8 +1,8 @@
 <template>
   <div class="publication">
-    <h2> <v-icon  :name="publication.icon" class="info"/> {{publication.title}} </h2>
-    <h3> {{publication.author}} </h3>
-    <p> {{publication.venue}}, {{publication.year}} </p>
+    <h3 class="publication-title"><a :href="publication.link" target="_blank"> {{publication.title}} </a></h3>
+    <p class="publication-author">{{publication.author}}</p>
+    <p class="publication-venue">{{publication.venue}}, {{publication.year}}</p>
   </div>
 </template>
 
@@ -13,6 +13,18 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+a{
+  color: #1abab5 !important;
+}
+a:hover{
+  color: #12a39f !important;
+}
+.publication-author{
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+.publication-venue{
+  margin-bottom: 2em;
+}
 </style>

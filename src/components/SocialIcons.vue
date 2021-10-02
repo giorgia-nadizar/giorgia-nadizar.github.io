@@ -2,7 +2,7 @@
   <ul class="social-icons">
     <li class="social-icon" v-for="icon in icons" v-bind:key="icon.id">
       <a :href="icon.link">
-        <v-icon  :name="icon.icon" class="info"/>
+        <v-icon  :name="icon.icon" class="custom-icon"/>
       </a>
     </li>
   </ul>
@@ -25,20 +25,28 @@ export default {
 </script>
 
 <style scoped>
+ul{
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.social-icons{
+  text-align: center;
+  padding: 0 0 0 0;
+}
 .social-icon {
   display: inline-block;
-  margin-right: 2em;
   text-align: center;
   transition: transform .2s;
 }
 .fa-icon {
   width: auto;
-  height: 2em;
+  height: 2.2em;
   max-width: 100%;
   max-height: 100%;
-  margin-right: 3px;
-  margin-left: 3px;
-
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 .social-icon:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
