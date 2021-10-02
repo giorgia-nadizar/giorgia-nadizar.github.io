@@ -1,7 +1,7 @@
 <template>
   <ul class="social-icons">
     <li class="social-icon" v-for="icon in icons" v-bind:key="icon.id">
-      <a :href="icon.link">
+      <a target="_blank" :href="icon.link">
         <v-icon  :name="icon.icon" class="custom-icon"/>
       </a>
     </li>

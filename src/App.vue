@@ -77,7 +77,7 @@ html, body {
   margin-bottom: 3em;
 }
 .navbar-expand-md{
-  background-color: 	#1bccc6;
+  background-color: 	#1abab5;
   font-size: 1.2em;
   font-weight: bolder;
 }

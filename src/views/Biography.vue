@@ -3,9 +3,9 @@
     <h1 class="view-title">Biography</h1>
       <p>
         I am a PhD student in Applied Data Science and Artificial
-        Intelligence in the <a href="https://erallab.inginf.units.it/">"Evolutionary
+        Intelligence in the <a target="_blank" href="https://erallab.inginf.units.it/">"Evolutionary
         Robotics and Artificial Life Lab"</a>,
-        <a href="https://www.units.it/">University of Trieste</a>.
+        <a target="_blank" href="https://www.units.it/">University of Trieste</a>.
         I earned my Bachelor and Master in Electronics and Computer Engineering at
         the University of Trieste, in 2019 and 2021 respectively.
         I wrote my Master Thesis in collaboration with Oslo Metropolitan University,
