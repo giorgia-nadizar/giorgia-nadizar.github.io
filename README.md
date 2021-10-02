@@ -1,25 +1,13 @@
 # Personal Website
-Developed using VueJs. Still not visible anywhere.
+Proudly developed using VueJs.
+Visible on giorgia-nadizar.github.io
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Website deployment
 ```
-npm run serve
+npm run deploy
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
