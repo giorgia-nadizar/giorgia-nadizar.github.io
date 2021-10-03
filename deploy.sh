@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 # abort on errors
 set -e
+# update
+node update.js
 # build
 npm run build
 # navigate into the build output directory

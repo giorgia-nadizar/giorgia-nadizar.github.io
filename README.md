@@ -11,3 +11,8 @@ npm install
 ```
 npm run deploy
 ```
+
+## Publications and cv update
+```
+npm install googleapis@39 --save
+```
