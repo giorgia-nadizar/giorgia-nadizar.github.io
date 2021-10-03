@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import Publication from '@/components/Publication.vue'
 export default {
   name: 'Publications',
@@ -18,25 +17,16 @@ export default {
   },
   data() {
     return {
-      publications : []
+      publications : [
+        {"id":"nadizar2021effects",
+        "title":"On the Effects of Pruning on Evolved Neural Controllers for Soft Robots",
+        "author":"G. Nadizar, E. Medvet, F.A. Pellegrino, M. Zullich, S. Nichele",
+        "venue":"Workshop on Neuroevolution at Work (NEWK@GECCO)",
+        "year":2021,
+        "type":"conference",
+        "link":"https://dl.acm.org/doi/abs/10.1145/3449726.3463161"}
+      ]
     }
-  },
-  created() {
-    var parseResponse = function(data) {
-      var cols = data.table.cols.map(
-        ({label}) => label.replace(/[^A-Za-z0-9]+/g, ' ').toLowerCase().split(" ").join(""));
-        return data.table.rows.map(function(r) {
-          var entry = {};
-          for (var i in r.c) {
-            entry[cols[i]] = r.c[i]?r.c[i].v:undefined;
-          }
-          return entry;
-        });
-      }
-      axios
-      .get("https://docs.google.com/spreadsheets/d/1xuE0l_JiaCDmAYeL8lufvbbcIFW28AC4xKzHFGLTUR8/gviz/tq?tqx=out:json")
-      .then((res) => (this.publications = parseResponse(JSON.parse(res.data.match(/(?<=.*\().*(?=\);)/s)[0]))))
-      .catch((err) => console.log(err));
-    }
+  }
 }
 </script>
