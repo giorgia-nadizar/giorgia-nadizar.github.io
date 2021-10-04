@@ -6,6 +6,11 @@ const publicationsFilename = "src/json/publications.json"
 const publicationsSpreadsheetId = '1xuE0l_JiaCDmAYeL8lufvbbcIFW28AC4xKzHFGLTUR8'
 const publicationsRange = 'Publications!A1:G'
 
+const cvFilename = "src/json/cv.json"
+const cvSpreadsheetId = "1BGN78Pm2gnuu6BS2imaKqbfCyAAxIiMUzkST3a8mFcA"
+const cvRanges = ['Education!A1:D','Research!A1:D','Conferences!A1:D','Schools!A1:D']
+const cvIcons = ['user-graduate', 'robot', 'users', 'chalkboard-teacher']
+
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 // The file token.json stores the user's access and refresh tokens, and is
@@ -82,24 +87,49 @@ function authorize(credentials, callback) {
     });
   }
 
-  function updatePublications(auth) {
+  function fetchJson(auth, spreadsheetId, range) {
     const sheets = google.sheets({version: 'v4', auth});
-    sheets.spreadsheets.values.get({
-      spreadsheetId: publicationsSpreadsheetId,
-      range: publicationsRange,
-    }, (err, res) => {
-      if (err) return console.log('The API returned an error: ' + err);
-      var entries = parseResponse(res.data.values);
+    return new Promise((resolve,reject) => {
+      sheets.spreadsheets.values.get({
+        spreadsheetId: spreadsheetId,
+        range: range,
+      }, (err, res) => {
+        if (err) reject(err);
+        var response = parseResponse(res.data.values);
+        resolve(response);
+      });
+    });
+  }
+
+  function updatePublications(auth) {
+    fetchJson(auth,publicationsSpreadsheetId,publicationsRange).then(entries => {
       var json = JSON.stringify(entries);
       fs.writeFile(publicationsFilename, json, 'utf8', function(err){
         if(err) throw err;
       });
-      console.log("Publications updated.")
+      console.log("Publications updated.");
+    }).catch((err) => {
+      console.log("Error!");
     });
   }
 
   function updateCV(auth) {
-    console.log("CV updated.")
+    var promises = cvRanges.map(function(range){
+      return fetchJson(auth,cvSpreadsheetId,range).then(x => x )
+    })
+    Promise.all(promises).then(function(results) {
+      const cvItems = Array.from(Array(cvRanges.length).keys()).map(i => ({
+          title : cvRanges[i].substr(0, cvRanges[i].indexOf('!')),
+          icon : cvIcons[i],
+          events : results[i]
+        })
+      );
+      var json = JSON.stringify(cvItems);
+      fs.writeFile(cvFilename, json, 'utf8', function(err){
+        if(err) throw err;
+      });
+      console.log("CV updated.");
+    })
   }
 
   function update(auth){
