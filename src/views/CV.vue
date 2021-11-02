@@ -1,6 +1,6 @@
 <template>
   <div class="cv">
-    <h1 class="view-title">CV</h1>
+    <h1 class="view-title">Cv</h1>
     <div v-for="item in items" :key="item.title">
       <h2>{{item.title}} <v-icon :name=item.icon class="title-icon"/></h2>
       <ul>
