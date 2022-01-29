@@ -62,6 +62,7 @@ export default {
   font-size: 28px;
 }
 .abstract{
+  margin-bottom: 0px;
   padding-bottom: 4em;
 }
 .authors{
@@ -75,7 +76,6 @@ export default {
 .ext-buttons{
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-
 }
 .ext-button{
   border-radius: 10px;
