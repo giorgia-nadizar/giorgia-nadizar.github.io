@@ -5,21 +5,14 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav class="navbar-items">
         <b-navbar-nav >
-          <b-nav-item class="custom-item" to="biography">Biography</b-nav-item>
-          <b-nav-item class="custom-item" to="publications">Publications</b-nav-item>
-          <b-nav-item class="custom-item" to="cv">Cv</b-nav-item>
+          <b-nav-item class="custom-item" to="/biography">Biography</b-nav-item>
+          <b-nav-item class="custom-item" to="/publications">Publications</b-nav-item>
+          <b-nav-item class="custom-item" to="/cv">Cv</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <!-- website content -->
-    <div class="content">
-      <b-container class="main">
-        <b-row>
-          <b-col md=4 sm=12> <Header/> </b-col>
-          <b-col md=8 sm=12 class="content-column"> <router-view/> </b-col>
-        </b-row>
-      </b-container>
-    </div>
+    <router-view/>
 
     <!-- footer -->
     <div class="footer">
@@ -30,13 +23,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Header
-  }
+  name: 'App'
 }
 </script>
 

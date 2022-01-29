@@ -1,6 +1,6 @@
 <template>
   <div class="publication">
-    <h3 class="publication-title"><a :href="publication.link" target="_blank"> {{publication.title}} </a></h3>
+    <h3 class="publication-title"><router-link :to="{ name: 'Publication', params: { id: publication.id }}"> {{publication.title}} </router-link></h3>
     <p class="publication-author">{{publication.author}}</p>
     <p class="publication-venue">{{publication.venue}}, {{publication.year}}</p>
   </div>
