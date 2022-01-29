@@ -4,7 +4,7 @@ const {google} = require('googleapis');
 
 const publicationsFilename = "src/json/publications.json"
 const publicationsSpreadsheetId = '1xuE0l_JiaCDmAYeL8lufvbbcIFW28AC4xKzHFGLTUR8'
-const publicationsRange = 'Publications!A1:L'
+const publicationsRange = 'Publications!A1:K'
 
 const cvFilename = "src/json/cv.json"
 const cvSpreadsheetId = "1BGN78Pm2gnuu6BS2imaKqbfCyAAxIiMUzkST3a8mFcA"
