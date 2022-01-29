@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      publications : json
+      publications : json.reverse()
     }
   }
 }

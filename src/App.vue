@@ -44,11 +44,11 @@ html, body {
 }
 @media (min-width: 769px) {
   .main{
-    max-width: 80%;
+    max-width: 1100px;
     margin: auto;
   }
   .navbar-items{
-    max-width: 80%;
+    max-width: 1100px;
     margin: auto;
   }
 }

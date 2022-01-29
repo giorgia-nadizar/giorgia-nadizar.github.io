@@ -1,5 +1,18 @@
 <template>
-  <h1> {{paper.title}} </h1>
+  <div class="main paper">
+    <div class="paper-content">
+      <h1 class="view-title"> {{paper.title}} </h1>
+      <p class="authors"> {{paper.author}} </p>
+      <p class="venue"> {{paper.venue}}, {{paper.year}} </p>
+      <div class="ext-buttons">
+        <b-button class="ext-button" v-if="paper.doi.length> 0" :href="`https://doi.org/${paper.doi}`" target="_blank"> DOI </b-button>
+        <b-button class="ext-button" v-if="paper.full_text.length> 0" :href="paper.full_text" target="_blank"> PDF </b-button>
+        <b-button class="ext-button" v-if="paper.slides.length> 0" :href="paper.slides" target="_blank"> SLIDES </b-button>
+      </div>
+      <h2 class="abs"> Abstract </h2>
+      <p> {{paper.abstract}} </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -32,5 +45,43 @@ export default {
 </script>
 
 <style>
+  .paper{
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .paper-content{
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .abs{
+    font-size: 28px;
+  }
+  .authors{
+    font-size: 20px;
+  }
+  .venue{
+    font-size: 20px;
+    font-weight: bold;
+    color: #697878 ;
+  }
+  .ext-buttons{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 
+  }
+  .ext-button{
+    border-radius: 10px;
+    margin-right: 1em;
+    color: #1abab5 !important;
+    border-color: #1abab5;
+    background-color: white;
+    border: 2.5px solid;
+    font-weight: 600;
+  }
+  .ext-button:hover{
+    color: white !important;
+    background-color: #1abab5;
+    border-color: #1abab5;
+  }
 </style>
