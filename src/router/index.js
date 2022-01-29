@@ -24,7 +24,8 @@ const routes = [
         path: 'publications',
         name: 'Publications',
         component: () => import(/* webpackChunkName: "about" */ '../views/Publications.vue')
-      }
+      },
+      { path: '*', redirect: '/biography' }
     ]
   },
   {
