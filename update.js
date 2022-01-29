@@ -94,7 +94,9 @@ function authorize(credentials, callback) {
         spreadsheetId: spreadsheetId,
         range: range,
       }, (err, res) => {
-        if (err) reject(err);
+        if (err) {
+          reject(err);
+        }
         var response = parseResponse(res.data.values);
         resolve(response);
       });
