@@ -1,6 +1,6 @@
 <template>
-  <div class="main paper">
-    <div class="paper-content">
+  <div class="content">
+    <div class="paper">
       <h1 class="view-title"> {{paper.title}} </h1>
       <p class="authors"> {{paper.author}} </p>
       <p class="venue"> {{paper.venue}}, {{paper.year}} </p>
@@ -10,7 +10,7 @@
         <b-button class="ext-button" v-if="paper.slides.length> 0" :href="paper.slides" target="_blank"> SLIDES </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
-      <p> {{paper.abstract}} </p>
+      <p class="abstract"> {{paper.abstract}} </p>
     </div>
   </div>
 </template>
@@ -45,43 +45,50 @@ export default {
 </script>
 
 <style>
+@media (min-width: 769px) {
   .paper{
-    text-align: left;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 1100px;
+    margin: auto;
   }
-  .paper-content{
-    margin-right: 2em;
-    margin-left: 2em;
-  }
-  .abs{
-    font-size: 28px;
-  }
-  .authors{
-    font-size: 20px;
-  }
-  .venue{
-    font-size: 20px;
-    font-weight: bold;
-    color: #697878 ;
-  }
-  .ext-buttons{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+}
+.paper{
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 1.2em;
+  bottom: 0px !important;
+}
+.abs{
+  font-size: 28px;
+}
+.abstract{
+  padding-bottom: 4em;
+}
+.authors{
+  font-size: 20px;
+}
+.venue{
+  font-size: 20px;
+  font-weight: bold;
+  color: #697878 ;
+}
+.ext-buttons{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 
-  }
-  .ext-button{
-    border-radius: 10px;
-    margin-right: 1em;
-    color: #1abab5 !important;
-    border-color: #1abab5;
-    background-color: white;
-    border: 2.5px solid;
-    font-weight: 600;
-  }
-  .ext-button:hover{
-    color: white !important;
-    background-color: #1abab5;
-    border-color: #1abab5;
-  }
+}
+.ext-button{
+  border-radius: 10px;
+  margin-right: 1em;
+  color: #1abab5 !important;
+  border-color: #1abab5;
+  background-color: white;
+  border: 2.5px solid;
+  font-weight: 600;
+}
+.ext-button:hover{
+  color: white !important;
+  background-color: #1abab5;
+  border-color: #1abab5;
+}
 </style>

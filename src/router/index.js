@@ -7,6 +7,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/publications/:id',
+    name: 'Publication',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Publication.vue')
+  },
+  {
     path: '/',
     component: Main,
     children: [
@@ -27,11 +32,6 @@ const routes = [
       },
       { path: '*', redirect: '/biography' }
     ]
-  },
-  {
-    path: '/publications/:id',
-    name: 'Publication',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Publication.vue')
   },
   { path: '*', redirect: '/biography' }
 ]
