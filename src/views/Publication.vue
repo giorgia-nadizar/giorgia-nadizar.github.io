@@ -45,12 +45,6 @@ export default {
 </script>
 
 <style>
-@media (min-width: 769px) {
-  .paper{
-    max-width: 1100px;
-    margin: auto;
-  }
-}
 .paper{
   text-align: left;
   padding-right: 15px;

@@ -43,12 +43,8 @@ html, body {
   color: #2c3e50;
 }
 @media (min-width: 769px) {
-  .main{
-    max-width: 1100px;
-    margin: auto;
-  }
-  .navbar-items{
-    max-width: 1100px;
+  .main, .navbar-items, .paper{
+    max-width: 1200px;
     margin: auto;
   }
 }
