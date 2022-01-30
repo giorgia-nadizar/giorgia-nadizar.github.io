@@ -86,9 +86,10 @@ export default {
   border: 2.5px solid;
   font-weight: 600;
 }
-.ext-button:hover{
+.ext-button:hover, .ext-button:active, .ext-button:focus{
   color: white !important;
-  background-color: #1abab5;
-  border-color: #1abab5;
+  background-color: #1abab5 !important;
+  border-color: #1abab5 !important;
+  box-shadow: none;
 }
 </style>
