@@ -16,7 +16,7 @@
 
     <!-- footer -->
     <div class="footer">
-      <p class="footer-text"> &copy; 2021, Giorgia Nadizar.</p>
+      <p class="footer-text"> &copy; 2022, Giorgia Nadizar.</p>
     </div>
   </div>
 

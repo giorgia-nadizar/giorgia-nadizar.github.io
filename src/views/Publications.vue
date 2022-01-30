@@ -18,8 +18,11 @@ export default {
   },
   data() {
     return {
-      publications : json.reverse()
+      publications : []
     }
-  }
+  },
+  created() {
+    this.publications = json.sort((a,b) => (a.n > b.n) ? -1 : ((b.n > a.n) ? 1 : 0));
+  },
 }
 </script>
