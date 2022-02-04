@@ -14,3 +14,6 @@ git add -A
 git commit -m 'Deploy.'
 git push -f git@github.com:giorgia-nadizar/academic-website.git master:gh-pages
 cd -
+git add .
+git commit -m 'Update.'
+git push
