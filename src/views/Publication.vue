@@ -8,6 +8,7 @@
         <b-button class="ext-button" v-if="paper.doi.length> 0" :href="`https://doi.org/${paper.doi}`" target="_blank"> DOI </b-button>
         <b-button class="ext-button" v-if="paper.full_text.length> 0" :href="paper.full_text" target="_blank"> PDF </b-button>
         <b-button class="ext-button" v-if="paper.slides.length> 0" :href="paper.slides" target="_blank"> SLIDES </b-button>
+        <b-button class="ext-button" v-if="paper.code.length> 0" :href="paper.code" target="_blank"> CODE </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
       <p class="abstract"> {{paper.abstract}} </p>
@@ -71,7 +72,7 @@ export default {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-.ext-button{
+.ext-button, .ext-button:active, .ext-button:focus{
   border-radius: 10px;
   margin-right: 1em;
   color: #1abab5 !important;
@@ -79,8 +80,9 @@ export default {
   background-color: white;
   border: 2.5px solid;
   font-weight: 600;
+  box-shadow: none;
 }
-.ext-button:hover, .ext-button:active, .ext-button:focus{
+.ext-button:hover{
   color: white !important;
   background-color: #1abab5 !important;
   border-color: #1abab5 !important;
