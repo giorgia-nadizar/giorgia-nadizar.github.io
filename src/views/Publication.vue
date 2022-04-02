@@ -8,6 +8,7 @@
         <b-button class="ext-button" v-if="paper.doi.length> 0" :href="`https://doi.org/${paper.doi}`" target="_blank"> DOI </b-button>
         <b-button class="ext-button" v-if="paper.full_text.length> 0" :href="paper.full_text" target="_blank"> PDF </b-button>
         <b-button class="ext-button" v-if="paper.slides.length> 0" :href="paper.slides" target="_blank"> SLIDES </b-button>
+        <b-button class="ext-button" v-if="paper.video.length> 0" :href="paper.video" target="_blank"> VIDEO </b-button>
         <b-button class="ext-button" v-if="paper.code.length> 0" :href="paper.code" target="_blank"> CODE </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
