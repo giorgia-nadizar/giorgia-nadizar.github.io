@@ -4,6 +4,7 @@
       <h1 class="view-title"> {{paper.title}} </h1>
       <p class="authors"> {{paper.author}} </p>
       <p class="venue"> {{paper.venue}}, {{paper.year}} </p>
+      <p class="notes"> <v-icon  name="award" class="award"/> {{paper.notes}} </p>
       <div class="ext-buttons">
         <b-button class="ext-button" v-if="paper.doi.length> 0" :href="`https://doi.org/${paper.doi}`" target="_blank"> DOI </b-button>
         <b-button class="ext-button" v-if="paper.full_text.length> 0" :href="paper.full_text" target="_blank"> PDF </b-button>
@@ -69,6 +70,17 @@ export default {
   font-size: 20px;
   font-weight: bold;
   color: #697878 ;
+}
+.notes{
+  font-size: 20px;
+  font-weight: bold;
+  color: #12a39f ;
+}
+.award{
+  width: auto;
+  height: 1em;
+  max-width: 100%;
+  max-height: 100%;
 }
 .ext-buttons{
   margin-top: 1.5em;
