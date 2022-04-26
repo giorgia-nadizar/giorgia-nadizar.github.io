@@ -4,7 +4,7 @@
       <h1 class="view-title"> {{paper.title}} </h1>
       <p class="authors"> {{paper.author}} </p>
       <p class="venue"> {{paper.venue}}, {{paper.year}} </p>
-      <p class="notes"> <v-icon  name="award" class="award"/> {{paper.notes}} </p>
+      <p class="notes" v-if="paper.notes.length> 0"> <v-icon v-if="paper.notes.length> 0" name="award" class="award"/> {{paper.notes}} </p>
       <div class="ext-buttons">
         <b-button class="ext-button" v-if="paper.doi.length> 0" :href="`https://doi.org/${paper.doi}`" target="_blank"> DOI </b-button>
         <b-button class="ext-button" v-if="paper.full_text.length> 0" :href="paper.full_text" target="_blank"> PDF </b-button>
@@ -14,7 +14,7 @@
         <b-button class="ext-button" v-if="paper.code.length> 0" :href="paper.code" target="_blank"> CODE </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
-      <p class="abstract"> {{paper.abstract}} </p>
+      <p class="abstract" v-html="paper.abstract"></p>
     </div>
   </div>
 </template>
