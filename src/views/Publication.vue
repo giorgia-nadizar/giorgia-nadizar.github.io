@@ -12,6 +12,7 @@
         <b-button class="ext-button" v-if="paper.poster.length> 0" :href="paper.poster" target="_blank"> POSTER </b-button>
         <b-button class="ext-button" v-if="paper.video.length> 0" :href="paper.video" target="_blank"> VIDEO </b-button>
         <b-button class="ext-button" v-if="paper.code.length> 0" :href="paper.code" target="_blank"> CODE </b-button>
+        <b-button class="ext-button" v-if="paper.cite_url.length> 0" :href="paper.cite_url" target="_blank"> CITE </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
       <p class="abstract" v-html="paper.abstract"></p>
@@ -22,6 +23,7 @@
 <script>
 import json from '../json/publications.json'
 import router from "../router"
+
 export default {
   name: 'Publication',
   data(){
@@ -37,6 +39,12 @@ export default {
       }
       this.paper = filtered[0];
       document.title = this.paper.title;
+
+      if(this.paper.cite.length>0){
+        var blob = new Blob([this.paper.cite], {type: "text/plain;charset=utf-8"});
+        var url = URL.createObjectURL(blob);
+        this.paper.cite_url = url
+      }
     }
   },
   created() {
