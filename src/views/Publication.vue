@@ -43,7 +43,9 @@ export default {
       if(this.paper.cite.length>0){
         var blob = new Blob([this.paper.cite], {type: "text/plain;charset=utf-8"});
         var url = URL.createObjectURL(blob);
-        this.paper.cite_url = url
+        this.paper.cite_url = url;
+      }else {
+        this.paper.cite_url = "";
       }
     }
   },
