@@ -2,25 +2,32 @@
   <div class="biography">
     <h1 class="view-title">Biography</h1>
       <p>
-        I am a PhD student in Applied Data Science and Artificial
+        I am a third year PhD student in Applied Data Science and Artificial
         Intelligence in the <a target="_blank" href="https://erallab.inginf.units.it/">"Evolutionary
         Robotics and Artificial Life Lab"</a>,
-        <a target="_blank" href="https://www.units.it/">University of Trieste</a>.
-        I earned my Bachelor and Master in Electronics and Computer Engineering at
-        the University of Trieste, in 2019 and 2021 respectively.
-        I wrote my Master Thesis in collaboration with Oslo Metropolitan University,
-        where I spent six months working as Research Assistant, from March to August
-        2021.
+        <a target="_blank" href="https://www.units.it/">University of Trieste</a>,
+        working under the supervision of <a target="_blank" href="https://medvet.inginf.units.it/">Prof. Eric Medvet</a>.
       </p>
 
       <p>
-        My research interests range from evolutionary robotics to artificial intelligence,
-        but I am always open to explore new challenging topics.
-        Currently, I am working on bio-inspired robotic controllers.
-        I am interested in studying how robots can benefit from more biologically
-        plausible controllers, but I also see the potential for feeding useful
-        information back to neuroscience.
+        My research interests lie at the intersection of embodied AI and explainable/interpretable AI.
+        Namely, my goal is to find robotic controllers which can be effective while remaining directly human intelligible.
+        My current approach to the problem relies on the use of different nuances of Genetic Programming,
+        but I am always open to explore new paths.
       </p>
+
+      <p>
+        My academic journey has allowed me to experience several research environments.
+        At the end of 2022 I spent three months at the Centum Wiskunde & Informatica in Amsterdam working
+        with <a target="_blank" href="https://marcovirgolin.github.io/">Dr. Marco Virgolin</a>, whereas
+        in 2023, I spent five months at the ISAE-Supaero in Toulouse to work with 
+        <a target="_blank" href="https://d9w.github.io/">Dr. Dennis Wilson</a>.
+        Prior to my PhD position, I earned my Bachelor and Master in Electronics and Computer Engineering at
+        the University of Trieste, in 2019 and 2021 respectively.
+        During my Master Thesis, in 2021, I spent six months working as research assistant for the
+        Oslo Metropolitan University with <a target="_blank" href="https://www.nichele.eu/">Prof. Stefano Nichele</a>.
+      </p>
+
     </div>
 </template>
 
