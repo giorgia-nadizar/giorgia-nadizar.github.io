@@ -22,6 +22,8 @@
         with <a target="_blank" href="https://marcovirgolin.github.io/">Dr. Marco Virgolin</a>, whereas
         in 2023, I spent five months at the ISAE-Supaero in Toulouse to work with 
         <a target="_blank" href="https://d9w.github.io/">Dr. Dennis Wilson</a>.
+        More recently, at the beginning of 2024 I spent one month at the Massachusetts Institute of Technology (MIT) in the USA, 
+        hosted in the <a target="_blank" href="https://alfagroup.csail.mit.edu/">ALFA group</a>.
         Prior to my PhD position, I earned my Bachelor and Master in Electronics and Computer Engineering at
         the University of Trieste, in 2019 and 2021 respectively.
         During my Master Thesis, in 2021, I spent six months working as research assistant for the
