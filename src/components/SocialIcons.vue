@@ -16,7 +16,7 @@ export default {
       icons: [
         { id: 1, icon: "envelope", link: "mailto:giorgia.nadizar@gmail.com" },
         { id: 2, icon: "graduation-cap", link: "https://scholar.google.com/citations?user=TWbaiVMAAAAJ&hl=it" },
-        { id: 3, icon: "brands/twitter", link: "https://twitter.com/GNadizar" },
+        { id: 3, icon: "brands/square-x-twitter", link: "https://twitter.com/GNadizar" },
         { id: 4, icon: "brands/github", link: "https://github.com/giorgia-nadizar" }
       ]
     }
