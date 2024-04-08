@@ -10,6 +10,11 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^2.0.10",
     "axios": "^0.21.4",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
