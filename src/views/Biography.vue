@@ -18,7 +18,7 @@
 
       <p>
         My academic journey has allowed me to experience several research environments.
-        At the end of 2022 I spent three months at the Centum Wiskunde & Informatica in Amsterdam working
+        At the end of 2022 I spent three months at the Centrum Wiskunde & Informatica in Amsterdam working
         with <a target="_blank" href="https://marcovirgolin.github.io/">Dr. Marco Virgolin</a>, whereas
         in 2023, I spent five months at the ISAE-Supaero in Toulouse to work with 
         <a target="_blank" href="https://d9w.github.io/">Dr. Dennis Wilson</a>.
