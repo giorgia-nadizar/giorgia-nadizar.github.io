@@ -5,6 +5,7 @@
       <p class="authors"> Giorgia Nadizar </p>
       <div class="ext-buttons">
         <b-button class="ext-button" href="https://drive.google.com/file/d/1_c3AeMaCmGaRDHA105KkT-yIiX_COL-Y/view?usp=sharing" target="_blank"> PDF </b-button>
+        <b-button class="ext-button" href="https://docs.google.com/presentation/d/11KQGK1sQ2_v2zQ2qHmZ7qpImKI50y3d1pdmikcl2QvM/edit?usp=sharing" target="_blank"> Slides </b-button>
       </div>
       <h2 class="abs"> Abstract </h2>
       <p class="abstract">
