@@ -61,7 +61,7 @@ export default {
           id: 5,
           icon: "🇫🇷",
           title: "Research Visit at University of Toulouse Capitole (Toulouse)",
-          date: "January 2024",
+          date: "September 2024",
           description:
             "<p> Working with <a target='_blank' href='https://www.irit.fr/~Sylvain.Cussat-Blanc/index_en.php'>Prof. Sylvain Cussat-Blanc</a>.</p>",
         },
