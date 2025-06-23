@@ -73,6 +73,14 @@ export default {
           description:
             "<p>Ph.D. in Applied Data Science and Artificial Intelligence from the University of Trieste.</p> <p>Supervisor: <a target='_blank' href='https://medvet.inginf.units.it/'>Prof. Eric Medvet</a> </p> <p>Thesis title: <a target='_blank' href='/#/thesis'>Towards Bio-Inspired Interpretable Embodied Artificial Intelligence</a> </p>",
         },
+        {
+          id: 7,
+          icon: "🇨🇦",
+          title: "Research Visit at McMaster University (Hamilton)",
+          date: "June 2025",
+          description:
+            "<p> Working with <a target='_blank' href='https://creativealgorithms-cd4c88.gitlab.io/team/'>Dr. Stephen Kelly</a>.</p>",
+        },
       ],
     };
   },
