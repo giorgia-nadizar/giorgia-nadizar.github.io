@@ -2,7 +2,7 @@
   <div id="side-panel">
     <b-avatar class="avatar-with-border" :src="require('../static/scholar.jpg')" size="10em"></b-avatar>
     <p id="name">Giorgia Nadizar</p>
-    <p id="tagline">PhD student in Applied Data Science & Artificial Intelligence</p>
+    <p id="tagline">PostDoctoral Research Fellow in Interpretable Control</p>
     <SocialIcons />
   </div>
 </template>
