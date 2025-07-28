@@ -10,12 +10,6 @@
       working under the supervision of
       <a target="_blank" href="https://medvet.inginf.units.it/"
         >Prof. Eric Medvet</a
-      >
-      and
-      <a
-        target="_blank"
-        href="https://naturalcomputinglab.github.io/people/lmanzoni"
-        >Prof. Luca Manzoni</a
       >.
     </p>
 
