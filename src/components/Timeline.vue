@@ -33,6 +33,15 @@ export default {
         },
         {
           id: 2,
+          icon: "🇮🇹",
+          title:
+            "PhD Student in Applied Data Science & Artificial Intelligence at the University of Trieste",
+          date: "November 2021 - October 2024",
+          description:
+            "<p> Working with <a target='_blank' href='https://medvet.inginf.units.it/'>Prof. Eric Medvet</a>.</p>",
+        },
+        {
+          id: 3,
           icon: "🇳🇱",
           title:
             "Ph.D. Internship at Centrum Wiskunde & Informatica (Amsterdam)",
@@ -41,7 +50,7 @@ export default {
             "<p> Working with <a target='_blank' href='https://marcovirgolin.github.io/'>Dr. Marco Virgolin</a>.</p>",
         },
         {
-          id: 3,
+          id: 4,
           icon: "🇫🇷",
           title: "Research Visit at ISAE-Supaero (Toulouse)",
           date: "May 2023 - October 2023",
@@ -49,7 +58,7 @@ export default {
             "<p> Working with <a target='_blank' href='https://d9w.github.io/'>Dr. Dennis Wilson</a> supported by a SPECIES scholarship.</p>",
         },
         {
-          id: 4,
+          id: 5,
           icon: "🇺🇸",
           title:
             "Research Visit at Massachusetts Institute of Technology (Boston)",
@@ -58,15 +67,23 @@ export default {
             "<p> Working in the <a target='_blank' href='https://alfagroup.csail.mit.edu/'>ALFA group</a>.</p>",
         },
         {
-          id: 5,
+          id: 6,
           icon: "🇫🇷",
-          title: "Research Visit at University of Toulouse Capitole (Toulouse)",
+          title: "Research Visit at the University of Toulouse Capitole (Toulouse)",
           date: "September 2024",
           description:
             "<p> Working with <a target='_blank' href='https://www.irit.fr/~Sylvain.Cussat-Blanc/index_en.php'>Prof. Sylvain Cussat-Blanc</a>.</p>",
         },
         {
-          id: 6,
+          id: 7,
+          icon: "🇮🇹",
+          title: "Postdoctoral Researcher at the University of Trieste",
+          date: "November 2024 - October 2025",
+          description:
+            "<p> Working with <a target='_blank' href='https://medvet.inginf.units.it/'>Prof. Eric Medvet</a>.</p>",
+        },
+        {
+          id: 8,
           icon: "🎓",
           title: "Ph.D. cum laude",
           date: "27th January 2025",
@@ -74,12 +91,20 @@ export default {
             "<p>Ph.D. in Applied Data Science and Artificial Intelligence from the University of Trieste.</p> <p>Supervisor: <a target='_blank' href='https://medvet.inginf.units.it/'>Prof. Eric Medvet</a> </p> <p>Thesis title: <a target='_blank' href='/#/thesis'>Towards Bio-Inspired Interpretable Embodied Artificial Intelligence</a> </p>",
         },
         {
-          id: 7,
+          id: 9,
           icon: "🇨🇦",
           title: "Research Visit at McMaster University (Hamilton)",
           date: "June 2025",
           description:
             "<p> Working with <a target='_blank' href='https://creativealgorithms-cd4c88.gitlab.io/team/'>Dr. Stephen Kelly</a>.</p>",
+        },
+        {
+          id: 10,
+          icon: "🇫🇷",
+          title: "Postdoctoral Researcher at the University of Toulouse Capitole (Toulouse)",
+          date: "November 2025 - Ongoing",
+          description:
+            "<p> Working with <a target='_blank' href='https://www.irit.fr/~Sylvain.Cussat-Blanc/index_en.php'>Prof. Sylvain Cussat-Blanc</a>.</p>",
         },
       ],
     };
