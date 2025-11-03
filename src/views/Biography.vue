@@ -4,7 +4,7 @@
     <p>
       I am a Postdoctoral Research Fellow in the
       <a target="_blank" href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team/"
-        >"REVA Team"</a
+        >REVA Team</a
       >,
       <a target="_blank" href="https://www.ut-capitole.fr/">University of Toulouse Capitole</a>,
       working under the supervision of
