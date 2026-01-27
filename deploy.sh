@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 # abort on errors
 set -e
+# set node env variable
+export NODE_OPTIONS=--openssl-legacy-provider
 # update
 node update.js
 # build
