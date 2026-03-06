@@ -22,6 +22,7 @@
 <script>
 export default {
   name: 'PhD Thesis',
+  title: 'Giorgia Nadizar - PhD Thesis',
 }
 </script>
 
