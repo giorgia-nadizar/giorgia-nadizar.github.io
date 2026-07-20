@@ -11,6 +11,10 @@ const cvSpreadsheetId = "1BGN78Pm2gnuu6BS2imaKqbfCyAAxIiMUzkST3a8mFcA"
 const cvRanges = ['Education!A1:D','Research!A1:D','Conferences!A1:D','Schools!A1:D']
 const cvIcons = ['user-graduate', 'robot', 'users', 'chalkboard-teacher']
 
+const teachingFilename = "src/json/teaching.json"
+const teachingSpreadsheetId = '1stAgsE9uR_zrCK6oY-1CI6yz2CT_KFzrZzUG8wF9-SA'
+const teachingRange = 'Courses!A1:J'
+
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 // The file token.json stores the user's access and refresh tokens, and is
@@ -115,6 +119,18 @@ function authorize(credentials, callback) {
     });
   }
 
+  function updateTeaching(auth) {
+    fetchJson(auth,teachingSpreadsheetId,teachingRange).then(entries => {
+      var json = JSON.stringify(entries);
+      fs.writeFile(teachingFilename, json, 'utf8', function(err){
+        if(err) throw err;
+      });
+      console.log("Teaching updated.");
+    }).catch((err) => {
+      console.log("Error!");
+    });
+  }
+
   function updateCV(auth) {
     var promises = cvRanges.map(function(range){
       return fetchJson(auth,cvSpreadsheetId,range).then(x => x )
@@ -137,4 +153,5 @@ function authorize(credentials, callback) {
   function update(auth){
     updateCV(auth);
     updatePublications(auth);
+    updateTeaching(auth);
   }

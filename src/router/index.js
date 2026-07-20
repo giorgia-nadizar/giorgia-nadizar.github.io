@@ -35,6 +35,11 @@ const routes = [
         name: 'Publications',
         component: () => import(/* webpackChunkName: "about" */ '../views/Publications.vue')
       },
+      {
+        path: 'teaching',
+        name: 'Teaching',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Teaching.vue')
+      },
       { path: '*', redirect: '/biography' }
     ]
   },

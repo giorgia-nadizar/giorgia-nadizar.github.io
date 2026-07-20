@@ -7,6 +7,7 @@
         <b-navbar-nav >
           <b-nav-item class="custom-item" to="/biography">Biography</b-nav-item>
           <b-nav-item class="custom-item" to="/publications">Publications</b-nav-item>
+          <b-nav-item class="custom-item" to="/teaching">Teaching</b-nav-item>
           <b-nav-item class="custom-item" to="/cv">Cv</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
